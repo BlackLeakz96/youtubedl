@@ -1,0 +1,4 @@
+youtube_dl
+pyqt5
+PySide2
+PySide6
