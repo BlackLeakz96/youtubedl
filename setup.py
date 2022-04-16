@@ -2,6 +2,8 @@ import os
 import sys
 import subprocess
 import platform
+import setupui
+from setupui import *
 from git import Repo
 from datetime import datetime
 
