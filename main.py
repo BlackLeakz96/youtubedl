@@ -11,17 +11,14 @@ from datetime import date
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-# location for const, vars,
-
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
 
 
 
 
-# loads the mainwindow (UserInterface)
+
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
-    # self-initialized function which inits the UI with * inside
     def __init__(self, *args, obj=None, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.setupUi(self)
@@ -30,8 +27,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
 
-    # DOWNLOAD BUTTON BLJAD , SZOR QURWA, STOR SZUKA
-    # PushButton clicked.connect Function which is used by the download button bljad
+
     def load(self):
 
         def my_hook(d):
@@ -69,7 +65,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
 
-# python builtinconsole
+
 
 def initxcon():
     print("\n===============================================\n")
@@ -86,7 +82,7 @@ def initxcon():
 
 
 
-# main function
+
 def main():
     app = QtWidgets.QApplication(sys.argv)
     window = MainWindow()
@@ -97,5 +93,4 @@ def main():
 
 if __name__ == '__main__':
     initxcon()
-
     main()

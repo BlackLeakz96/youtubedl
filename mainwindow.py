@@ -106,18 +106,7 @@ class Ui_MainWindow(object):
         self.actionUpdate_2.setText(_translate("MainWindow", "Update"))
         self.actionWebsite.setText(_translate("MainWindow", "Website"))
 
-def detectos():
-    osy = platform.system()
-    archx = platform.machine()
-    ver = platform.version()
 
-    print("Your system: " + osy)
-    print("Your machine: " + archx)
-    print("Your system version: " + ver)
-
-    self.console.append("Your system: " + osy)
-    self.console.append("Your machine: " + archx)
-    self.console.append("Your system version: " + ver)
 #def my_hook(d):
     #if d['status'] == 'finished':
         #print('Done downloading, now converting ...')
